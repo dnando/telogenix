@@ -1,0 +1,61 @@
+; This is the Calva evaluation results output window.
+; Leave it open, please. Because quirks.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - File URLs in stacktrace frames are peekable and clickable.
+clj::user=> 
+; Jack-in done.
+; Evaluating file: model.clj
+nil
+clj::telo.model=> 
+; Evaluating file: view.clj
+#'telo.view/batches
+clj::telo.view=> 
+; Evaluating file: controller.clj
+#'telo.controller/save-nutrient
+clj::telo.controller=> 
+; Evaluating file: telogenix.clj
+nil
+clj::telo.telogenix=> 
+Sun Aug 23 23:36:20 CEST 2020 INFO: Starting server on port: 8886
+#function[clojure.lang.AFunction/1]
+clj::telo.telogenix=> 
+nil
+clj::telo.model=> 
+#'telo.model/config
+clj::telo.model=> 
+#'telo.model/client
+clj::telo.model=> 
+true
+clj::telo.model=> 
+#'telo.model/conn
+clj::telo.model=> 
+#'telo.model/telo-schema
+clj::telo.model=> 
+{:db-before
+ #datomic.core.db.Db{:id "telogenix", :basisT 5, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :db-after
+ #datomic.core.db.Db{:id "telogenix", :basisT 6, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :tx-data
+ [#datom[13194139533318 50 #inst "2020-08-23T21:50:45.170-00:00" 13194139533318 true] #datom[73 10 :nutrient/name 13194139533318 true] #datom[73 40 23 13194139533318 true] #datom[73 41 35 13194139533318 true] #datom[73 63 "A nutrient / supplement name" 13194139533318 true] #datom[74 10 :nutrient/grams-in-stock 13194139533318 true] #datom[74 40 22 13194139533318 true] #datom[74 41 35 13194139533318 true] #datom[74 63 "Total grams in stock of this nutrient" 13194139533318 true] #datom[75 10 :nutrient/purchase-url 13194139533318 true] #datom[75 40 60 13194139533318 true] #datom[75 41 35 13194139533318 true] #datom[75 63 "Link to purchase this nutrient online" 13194139533318 true] #datom[76 10 :nutrient/note 13194139533318 true] #datom[76 40 23 13194139533318 true] #datom[76 41 35 13194139533318 true] #datom[76 63 "Notes on this nutrient" 13194139533318 true] #datom[0 13 73 13194139533318 true] #datom[0 13 74 13194139533318 true] #datom[0 13 75 13194139533318 true] #datom[0 13 76 13194139533318 true]],
+ :tempids {}}
+clj::telo.model=> 
+{:db-before
+ #datomic.core.db.Db{:id "telogenix", :basisT 6, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :db-after
+ #datomic.core.db.Db{:id "telogenix", :basisT 7, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :tx-data [#datom[13194139533319 50 #inst "2020-08-23T21:53:28.335-00:00" 13194139533319 true]],
+ :tempids {}}
+clj::telo.model=> 
