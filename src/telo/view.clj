@@ -39,7 +39,7 @@
             :integrity "sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
             :crossorigin "anonymous"}]
     [:link {:rel "stylesheet"
-            :href "/public/styles.css"}]]
+            :href "styles.css"}]]
    [:body
     (nav req)
     [:div.container
@@ -66,25 +66,60 @@
 (defn nutrient-list
   [req]
   (response
-   (layout req [:h1.display3 
-                [:a.red-plus {:href "/edit-nutrient"} "+"] " Nutrients"
+   (layout req [:div.wrp
+                [:h1.display3
+                 [:a.red-plus {:href "/edit-nutrient"} "+"] " Nutrients"]
+                [:table.table
+                 [:tr
+                  [:td "Name"]
+                  [:td "Stock (g)"]
+                  [:td "Purchase Link"]
+                  [:td "Note"]
+                  [:td]]
+                 (for [n (get-in req [:params :q])]
+                   [:tr
+                    [:td [:a {:href (str "/edit-nutrient/" (:eid n))}(:name n)]]
+                    [:td (:grams-in-stock n)]
+                    [:td  [:a {:href (:purchase-url n) :target "_blank"} [:img {:src "bi/link.svg"}]]]
+                    [:td (:note n)]
+                    [:td [:a.red-x {:href (str "/del-nutrient/" (:eid n))} "x"]]
+                    ]
+                   )]
+                ;;(pr-str (get-in req [:params :q]))
                 ])))
+;;(pr-str (get-in req [:params :q]))
 
 (defn nutrient-form
   [req]
   (response
-   (layout req '(
-                 [:h1.display3 "Edit Nutrient"]
-                 [:form {:method "post" :action "/edit-nutrient"}
-                  [:button.btn.btn-primary {:type "submit"} "Save"]
-                  ]
-                 
-                 ))))
-
-(defn nutrient-save
-  [req]
-  (response
-   (layout req [:h1.display3 "Nutrient Save"])))
+   (layout req
+           (let [data (first (get-in req [:params :q]))]
+           [:div.wrp
+            [:h1.display3.mb-4 "Edit Nutrient"]
+            [:form {:method "post" :action "/edit-nutrient"}
+             [:input {:type "hidden" :name "id" :value (:eid data)}]
+             [:div.mb-3
+              [:label {:for "theName" :class "form-label"} "Name"]
+              [:input {:type "text" :class "form-control" :id "theName" :name "name" :value (:name data)}]]
+             [:label {:for "stock" :class "form-label"} "Current Stock"]
+             [:div.mb-3.input-group
+              [:input {:type "number" :class "form-control" :id "stock" :name "grams-in-stock" :value (:grams-in-stock data)}]
+              [:span {:class "input-group-text"} "grams"]]
+             [:div.mb-3
+              [:label {:for "theNote" :class "form-label"} "Note"]
+              [:textarea {:class "form-control" :id "theNote" :name "note"} (:note data)]]
+             [:div.mb-3
+              [:label {:for "pUrl" :class "form-label"} "Purchase Link"]
+              [:input {:type "text" :class "form-control" :id "pUrl" :name "purchase-url" :value (:purchase-url data)}]]
+             [:div.mb-3
+              [:label {:for "cat" :class "form-label"} "Category"]
+              [:select.form-select {:name "category" :id "cat"}
+               (for [c (get-in req [:params :qc])]
+                 [:option {:value (:catid c) :selected (when (= (:catid c) (:category-eid data)) "selected")} (:name c)])
+               ]]
+             [:button.btn.btn-primary {:type "submit"} "Save"]]
+            (pr-str req)]))))
+;; (pr-str (get-in req [:path-params :id]))
 
 (defn formulas
   [req]
@@ -95,3 +130,8 @@
   [req]
   (response
    (layout req [:h1.display3 "Batches"])))
+
+(defn inspect [req]
+  (response
+   (layout req [:div (pr-str req)]))
+  )

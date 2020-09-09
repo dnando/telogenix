@@ -1,18 +1,13 @@
 (ns telo.telogenix
   (:gen-class)
   (:require [org.httpkit.server :as app-server]
-            ;;[ring.middleware.defaults :as wrap-defaults]
-            ;;[ring.middleware.params :refer [wrap-params]]
-            ;;[ring.middleware.reload :refer [wrap-reload]]
             [reitit.ring :as ring]
             [reitit.ring.middleware.multipart :as multipart]
             [reitit.ring.middleware.parameters :as parameters]
-           ;; [compojure.core :refer [defroutes GET POST]]
+            [ring.middleware.keyword-params :refer [wrap-keyword-params]]
             [telo.view :as view]
             [telo.controller :as ct]
-            [ring.handler.dump :refer [handle-dump]]
-            
-            ))
+            [ring.handler.dump :refer [handle-dump]]))
 
 ;; Request Routing
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -25,47 +20,29 @@
    :body (pr-str request)
    :headers {}})
 
-;; Compojure
-;;(defroutes routes
-;;  (GET "/" [] handler/home)
-;;  (GET "/nutrients" [] handler/nutrient-list)
-;;  (GET "/edit-nutrient" [] handler/edit-nutrient)
-;;  (GET "/formulas" [] handler/formulas)
-;;  (GET "/batches" [] handler/batches)  
-;;  (GET "/info" [] request-info)
-;;)
-
-;; This is how we apply middleware to the application in compojure
-;;(def app
-;;  (wrap-params
-;; routes))
-;; 
-;; Here is a sample of a redirect
-;; (ring.util.response/redirect "https://ring-clojure.github.io/ring/")
-
-;; reitet
-
 (def app
   (ring/ring-handler
    (ring/router
-    [["/" {:get ct/home}]
-     ["/nutrients" {:get ct/nutrients}]
-     ["/edit-nutrient" {:get ct/edit-nutrient
-                        :post ct/save-nutrient}]
+    [["/" {:get {:handler #'ct/home}}]
+     ["/nutrients" {:get {:handler #'ct/nutrients}}]
+     ["/edit-nutrient" {:get {:handler #'ct/edit-nutrient}
+                        :post {:handler #'ct/save-nutrient}}]
+     ["/edit-nutrient/:id" {:get {:parameters {:path {:id int?}}}
+                            :handler #'ct/edit-nutrient}]
+     ["/del-nutrient/:id" {:get {:parameters {:path {:id int?}}}
+                           :handler #'ct/delete-nutrient}]
      ["/formulas" {:get ct/formulas}]
      ["/batches" {:get ct/batches}]
-     ["/dump" {:get handle-dump}]
-     ]
-    {:data {:middleware [parameters/parameters-middleware 
-                         ]}}
-    )
-   
+     ["/dump" {:get handle-dump
+               :post handle-dump}]]
+    {:data {:middleware [parameters/parameters-middleware
+                         wrap-keyword-params]}})
    (ring/routes
+    ;; create-resource-handler serves static files from resources/public
     (ring/create-resource-handler {:path "/"})
-    (ring/create-default-handler)
-    )
-   ))
- ;; (ring/redirect-trailing-slash-handler {:method :strip})
+    (ring/redirect-trailing-slash-handler {:method :strip})
+    (ring/create-default-handler))))
+
 ;; System
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -142,5 +119,4 @@
   (def req {:user {:bar "none"}})
   (assoc-in req [:params :title] "Home")
   (pr-str req)
-  (clojure.java.io/resource "public/styles.css")
-  )
+  (clojure.java.io/resource "public/styles.css"))
