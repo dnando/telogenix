@@ -78,9 +78,9 @@
                   [:td]]
                  (for [n (get-in req [:params :q])]
                    [:tr
-                    [:td [:a {:href (str "/edit-nutrient/" (:eid n))}(:name n)]]
+                    [:td [:a {:href (str "/edit-nutrient/" (:eid n))} (:name n)]]
                     [:td (:grams-in-stock n)]
-                    [:td  [:a {:href (:purchase-url n) :target "_blank"} [:img {:src "bi/link.svg"}]]]
+                    [:td  [:a {:href (:purchase-url n) :target "_blank"} [:img {:src "bi/link.svg" :width "24"}]]]
                     [:td (:note n)]
                     [:td [:a.red-x {:href (str "/del-nutrient/" (:eid n))} "x"]]
                     ]
@@ -93,29 +93,29 @@
   [req]
   (response
    (layout req
-           (let [data (first (get-in req [:params :q]))]
+           (let [data (get-in req [:params :q])]
            [:div.wrp
             [:h1.display3.mb-4 "Edit Nutrient"]
             [:form {:method "post" :action "/edit-nutrient"}
-             [:input {:type "hidden" :name "id" :value (:eid data)}]
+             [:input {:type "hidden" :name "id" :value (:db/id data)}]
              [:div.mb-3
               [:label {:for "theName" :class "form-label"} "Name"]
-              [:input {:type "text" :class "form-control" :id "theName" :name "name" :value (:name data)}]]
+              [:input {:type "text" :class "form-control" :id "theName" :name "name" :value (:nutrient/name data)}]]
              [:label {:for "stock" :class "form-label"} "Current Stock"]
              [:div.mb-3.input-group
-              [:input {:type "number" :class "form-control" :id "stock" :name "grams-in-stock" :value (:grams-in-stock data)}]
+              [:input {:type "number" :class "form-control" :id "stock" :name "grams-in-stock" :value (:nutrient/grams-in-stock data)}]
               [:span {:class "input-group-text"} "grams"]]
              [:div.mb-3
               [:label {:for "theNote" :class "form-label"} "Note"]
-              [:textarea {:class "form-control" :id "theNote" :name "note"} (:note data)]]
+              [:textarea {:class "form-control" :id "theNote" :name "note"} (:nutrient/note data)]]
              [:div.mb-3
               [:label {:for "pUrl" :class "form-label"} "Purchase Link"]
-              [:input {:type "text" :class "form-control" :id "pUrl" :name "purchase-url" :value (:purchase-url data)}]]
+              [:input {:type "text" :class "form-control" :id "pUrl" :name "purchase-url" :value (:nutrient/purchase-url data)}]]
              [:div.mb-3
               [:label {:for "cat" :class "form-label"} "Category"]
               [:select.form-select {:name "category" :id "cat"}
                (for [c (get-in req [:params :qc])]
-                 [:option {:value (:catid c) :selected (when (= (:catid c) (:category-eid data)) "selected")} (:name c)])
+                 [:option {:value (:catid c) :selected (when (= (:catid c) (-> data :nutrient/category :db/id)) "selected")} (:name c)])
                ]]
              [:button.btn.btn-primary {:type "submit"} "Save"]]
             (pr-str req)]))))
@@ -134,4 +134,17 @@
 (defn inspect [req]
   (response
    (layout req [:div (pr-str req)]))
+  )
+
+
+(comment 
+  
+  (def data {:db/id 4611681620380876878, 
+             :nutrient/name "Vitamin A", 
+             :nutrient/grams-in-stock 40, 
+             :nutrient/purchase-url "http://www.bulksupplements.com/vitamin-a-palmitate.html", 
+             :nutrient/note "beta carotene and palmitate", 
+             :nutrient/category {:db/id 96757023244374}})
+  
+  (-> data :nutrient/category :db/id)
   )
