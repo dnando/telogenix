@@ -17,9 +17,9 @@
     v))
 
 (defn nutrient-form-data [req]
-  (if (nil? (get-in req [:path-params :id]))
-    (assoc-in req [:params :q] [{:eid -1 :name "" :grams-in-stock 0 :purchase-url "" :note ""}])
-    (assoc-in req [:params :q] (m/pull-nutrient (Long/parseLong (get-in req [:path-params :id]))))))
+  (if (get-in req [:path-params :id])
+    (assoc-in req [:params :q] (m/pull-nutrient (Long/parseLong (get-in req [:path-params :id]))))
+    (assoc-in req [:params :q] {:db/id -1 :nutrient/name "" :nutrient/grams-in-stock "0" :nutrient/purchase-url "" :nutrient/note ""})))
 
 (defn category-data [req]
   (assoc-in req [:params :qc] (m/find-all-categories)))
@@ -60,10 +60,7 @@
   
  (comment
 
-   (def req {:params {:q [{:eid -1, :name "", :grams-in-stock 0, :purchase-url "", :note ""}]}})
-   (get-in req [:params :eid])
-   (def data (first (get-in req [:params :q])))
-   (:eid data)
+   
    
    
    

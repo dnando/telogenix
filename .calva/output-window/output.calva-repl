@@ -4462,3 +4462,577 @@ clj::telo.view=>
 clj::telo.view=> 
 #'telo.view/nutrient-form
 clj::telo.view=> 
+#'telo.model/find-all-categories
+clj::telo.model=> 
+({:catid 87960930222164, :name "Vitamins", :sort-order 1}
+ {:catid 101155069755477, :name "Minerals", :sort-order 2}
+ {:catid 96757023244374, :name "Amino acids", :sort-order 3}
+ {:catid 96757023244375, :name "Herbs", :sort-order 4})
+clj::telo.model=> 
+([87960930222164 "Vitamins" 1]
+ [96757023244374 "Amino acids" 3]
+ [96757023244375 "Herbs" 4]
+ [101155069755477 "Minerals" 2])
+clj::telo.model=> 
+; Execution error (ArityException) at telo.model/eval777938 (REPL:109).
+; Wrong number of args (3) passed to: clojure.lang.PersistentVector
+[{:file "AFn.java" :line 429 :method "throwArity" :flags [:java]}
+ {:file "AFn.java" :line 40 :method "invoke" :flags [:java]}
+ {:file "NO_SOURCE_FILE" :line 109 :fn "eval777938"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "NO_SOURCE_FILE" :line 109 :fn "eval777938"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.model=> 
+{:db/id 4611681620380876878,
+ :nutrient/name "Vitamin A",
+ :nutrient/grams-in-stock 40,
+ :nutrient/purchase-url "http://www.bulksupplements.com/vitamin-a-palmitate.html",
+ :nutrient/note "beta carotene and palmitate",
+ :nutrient/category #:db{:id 87960930222164}}
+clj::telo.model=> 
+{:db/id 4611681620380876878,
+ :nutrient/name "Vitamin A",
+ :nutrient/grams-in-stock 40,
+ :nutrient/purchase-url "http://www.bulksupplements.com/vitamin-a-palmitate.html",
+ :nutrient/note "beta carotene and palmitate",
+ :nutrient/category #:db{:id 87960930222164}}
+clj::telo.model=> 
+; Execution error (NullPointerException) at com.google.common.base.Preconditions/checkNotNull (Preconditions.java:890).
+; null
+[{:file "Preconditions.java" :line 890 :method "checkNotNull" :flags [:java]}
+ {:file "LocalCache.java" :line 3848 :method "get" :flags [:java]}
+ {:file "LocalCache.java" :line 3873 :method "getOrLoad" :flags [:java]}
+ {:file "LocalCache.java" :line 4798 :method "get" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:71" :fn "fn"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:66" :fn "fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:63" :fn "fn/G"  :method "invoke" :flags [:clj]}
+ {:file "cache.clj" :line 120 :fn "valAt"  :method "valAt" :flags [:clj]}
+ {:file "RT.java" :line 760 :method "get" :flags [:java]}
+ {:file "pull.clj" :line 503 :fn "pull-1"  :method "invokeStatic" :flags [:clj]}
+ {:file "pull.clj" :line 500 :fn "pull-1"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:56" :fn "fn"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:24" :fn "fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:126" :fn "fn/G"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:342" :fn "pull"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:328" :fn "pull"  :method "invoke" :flags [:clj]}
+ {:file "NO_SOURCE_FILE" :line 132 :fn "eval779050"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "NO_SOURCE_FILE" :line 132 :fn "eval779050"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.model=> 
+; Execution error (ExceptionInfo) at datomic.core.error/raise (error.clj:55).
+; :db.error/invalid-lookup-ref Invalid list form: [#function[clojure.core/*]]
+[{:file "error.clj" :line 55 :fn "raise"  :method "invokeStatic" :flags [:clj]}
+ {:file "error.clj" :line 43 :fn "raise"  :method "invoke" :flags [:clj]}
+ {:file "error.clj" :line 64 :fn "arg"  :method "invokeStatic" :flags [:clj]}
+ {:file "error.clj" :line 59 :fn "arg"  :method "invoke" :flags [:clj]}
+ {:file "error.clj" :line 62 :fn "arg"  :method "invokeStatic" :flags [:clj]}
+ {:file "error.clj" :line 59 :fn "arg"  :method "invoke" :flags [:clj]}
+ {:file "db.clj" :line 547 :fn "resolve-lookup-ref"  :method "invokeStatic" :flags [:clj]}
+ {:file "db.clj" :line 544 :fn "resolve-lookup-ref"  :method "invoke" :flags [:clj]}
+ {:file "db.clj" :line 580 :fn "extended-resolve-id"  :method "invokeStatic" :flags [:clj]}
+ {:file "db.clj" :line 576 :fn "extended-resolve-id"  :method "invoke" :flags [:clj]}
+ {:file "db.clj" :line 591 :fn "resolve-id"  :method "invokeStatic" :flags [:clj]}
+ {:file "db.clj" :line 584 :fn "resolve-id"  :method "invoke" :flags [:clj]}
+ {:file "pull.clj" :line 397 :fn "pull*"  :method "invokeStatic" :flags [:clj]}
+ {:file "pull.clj" :line 356 :fn "pull*"  :method "invoke" :flags [:clj]}
+ {:file "pull.clj" :line 503 :fn "pull-1"  :method "invokeStatic" :flags [:clj]}
+ {:file "pull.clj" :line 500 :fn "pull-1"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:58" :fn "fn"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:24" :fn "fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:126" :fn "fn/G"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:344" :fn "pull"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:328" :fn "pull"  :method "invoke" :flags [:clj]}
+ {:file "NO_SOURCE_FILE" :line 132 :fn "eval779684"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "NO_SOURCE_FILE" :line 132 :fn "eval779684"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.model=> 
+#:db{:id nil}
+clj::telo.model=> 
+#:db{:id -1}
+clj::telo.model=> 
+; Execution error (ExceptionInfo) at datomic.core.error/raise (error.clj:55).
+; :db.error/invalid-lookup-ref Invalid list form: [:nutrient/name]
+[{:file "error.clj" :line 55 :fn "raise"  :method "invokeStatic" :flags [:clj]}
+ {:file "error.clj" :line 43 :fn "raise"  :method "invoke" :flags [:clj]}
+ {:file "error.clj" :line 64 :fn "arg"  :method "invokeStatic" :flags [:clj]}
+ {:file "error.clj" :line 59 :fn "arg"  :method "invoke" :flags [:clj]}
+ {:file "error.clj" :line 62 :fn "arg"  :method "invokeStatic" :flags [:clj]}
+ {:file "error.clj" :line 59 :fn "arg"  :method "invoke" :flags [:clj]}
+ {:file "db.clj" :line 547 :fn "resolve-lookup-ref"  :method "invokeStatic" :flags [:clj]}
+ {:file "db.clj" :line 544 :fn "resolve-lookup-ref"  :method "invoke" :flags [:clj]}
+ {:file "db.clj" :line 580 :fn "extended-resolve-id"  :method "invokeStatic" :flags [:clj]}
+ {:file "db.clj" :line 576 :fn "extended-resolve-id"  :method "invoke" :flags [:clj]}
+ {:file "db.clj" :line 591 :fn "resolve-id"  :method "invokeStatic" :flags [:clj]}
+ {:file "db.clj" :line 584 :fn "resolve-id"  :method "invoke" :flags [:clj]}
+ {:file "pull.clj" :line 397 :fn "pull*"  :method "invokeStatic" :flags [:clj]}
+ {:file "pull.clj" :line 356 :fn "pull*"  :method "invoke" :flags [:clj]}
+ {:file "pull.clj" :line 503 :fn "pull-1"  :method "invokeStatic" :flags [:clj]}
+ {:file "pull.clj" :line 500 :fn "pull-1"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:58" :fn "fn"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:24" :fn "fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:126" :fn "fn/G"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:344" :fn "pull"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:328" :fn "pull"  :method "invoke" :flags [:clj]}
+ {:file "NO_SOURCE_FILE" :line 132 :fn "eval783369"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "NO_SOURCE_FILE" :line 132 :fn "eval783369"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.model=> 
+; Execution error (ExceptionInfo) at datomic.core.error/raise (error.clj:55).
+; :db.error/lookup-ref-attr-not-unique Attribute values not unique: :nutrient/name
+[{:file "error.clj" :line 55 :fn "raise"  :method "invokeStatic" :flags [:clj]}
+ {:file "error.clj" :line 43 :fn "raise"  :method "invoke" :flags [:clj]}
+ {:file "error.clj" :line 64 :fn "arg"  :method "invokeStatic" :flags [:clj]}
+ {:file "error.clj" :line 59 :fn "arg"  :method "invoke" :flags [:clj]}
+ {:file "error.clj" :line 62 :fn "arg"  :method "invokeStatic" :flags [:clj]}
+ {:file "error.clj" :line 59 :fn "arg"  :method "invoke" :flags [:clj]}
+ {:file "db.clj" :line 560 :fn "resolve-lookup-ref"  :method "invokeStatic" :flags [:clj]}
+ {:file "db.clj" :line 544 :fn "resolve-lookup-ref"  :method "invoke" :flags [:clj]}
+ {:file "db.clj" :line 580 :fn "extended-resolve-id"  :method "invokeStatic" :flags [:clj]}
+ {:file "db.clj" :line 576 :fn "extended-resolve-id"  :method "invoke" :flags [:clj]}
+ {:file "db.clj" :line 591 :fn "resolve-id"  :method "invokeStatic" :flags [:clj]}
+ {:file "db.clj" :line 584 :fn "resolve-id"  :method "invoke" :flags [:clj]}
+ {:file "pull.clj" :line 397 :fn "pull*"  :method "invokeStatic" :flags [:clj]}
+ {:file "pull.clj" :line 356 :fn "pull*"  :method "invoke" :flags [:clj]}
+ {:file "pull.clj" :line 503 :fn "pull-1"  :method "invokeStatic" :flags [:clj]}
+ {:file "pull.clj" :line 500 :fn "pull-1"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:58" :fn "fn"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:24" :fn "fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:126" :fn "fn/G"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:344" :fn "pull"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:328" :fn "pull"  :method "invoke" :flags [:clj]}
+ {:file "NO_SOURCE_FILE" :line 132 :fn "eval785432"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "NO_SOURCE_FILE" :line 132 :fn "eval785432"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.model=> 
+#:db{:id nil}
+clj::telo.model=> 
+; Execution error (IllegalArgumentException) at datomic.core.datalog/resolve-id (datalog.clj:321).
+; Cannot resolve key: 
+[{:file "datalog.clj" :line 50 :fn "throw-query-ex!"  :method "invokeStatic" :flags [:clj]}
+ {:file "datalog.clj" :line 38 :fn "throw-query-ex!"  :method "invoke" :flags [:clj]}
+ {:file "datalog.clj" :line 1483 :fn "eval-clause/fn"  :method "invoke" :flags [:clj]}
+ {:file "datalog.clj" :line 1446 :fn "eval-clause"  :method "invokeStatic" :flags [:clj]}
+ {:file "datalog.clj" :line 1412 :fn "eval-clause"  :method "invoke" :flags [:clj]}
+ {:file "datalog.clj" :line 1532 :fn "eval-rule/fn"  :method "invoke" :flags [:clj]}
+ {:file "datalog.clj" :line 1517 :fn "eval-rule"  :method "invokeStatic" :flags [:clj]}
+ {:file "datalog.clj" :line 1496 :fn "eval-rule"  :method "invoke" :flags [:clj]}
+ {:file "datalog.clj" :line 1560 :fn "eval-query"  :method "invokeStatic" :flags [:clj]}
+ {:file "datalog.clj" :line 1543 :fn "eval-query"  :method "invoke" :flags [:clj]}
+ {:file "datalog.clj" :line 1649 :fn "qsqr"  :method "invokeStatic" :flags [:clj]}
+ {:file "datalog.clj" :line 1588 :fn "qsqr"  :method "invoke" :flags [:clj]}
+ {:file "datalog.clj" :line 1606 :fn "qsqr"  :method "invokeStatic" :flags [:clj]}
+ {:file "datalog.clj" :line 1588 :fn "qsqr"  :method "invoke" :flags [:clj]}
+ {:file "query.clj" :line 618 :fn "q*"  :method "invokeStatic" :flags [:clj]}
+ {:file "query.clj" :line 605 :fn "q*"  :method "invoke" :flags [:clj]}
+ {:file "local_query.clj" :line 58 :fn "local-q"  :method "invokeStatic" :flags [:clj]}
+ {:file "local_query.clj" :line 52 :fn "local-q"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:28" :fn "fn"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:24" :fn "fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:33" :fn "fn/G"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api/impl.clj:142" :fn "call-q"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api/impl.clj:139" :fn "call-q"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:393" :fn "q"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:365" :fn "q"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:395" :fn "q"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:365" :fn "q"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 439 :method "invoke" :flags [:java]}
+ {:file "file:/Users/nando/projects/telogenix/src/telo/model.clj:60" :fn "find-nutrient"  :method "invokeStatic" :flags [:project :clj]}
+ {:file "file:/Users/nando/projects/telogenix/src/telo/model.clj:59" :fn "find-nutrient"  :method "invoke" :flags [:project :clj]}
+ {:file "NO_SOURCE_FILE" :line 111 :fn "eval786384"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "NO_SOURCE_FILE" :line 111 :fn "eval786384"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.model=> 
+[]
+clj::telo.model=> 
+false
+clj::telo.model=> 
+; Evaluating file: controller.clj
+nil
+clj::telo.controller=> 
+#'telo.controller/nutrient-form-data
+clj::telo.controller=> 
+[(:db/id :default -1)
+ (:nutrient/name :default "")
+ (:nutrient/grams-in-stock :default 0)
+ (:nutrient/purchase-url :default "")
+ (:nutrient/note :default "")
+ :nutrient/category]
+clj::telo.model=> 
+#'telo.controller/nutrient-form-data
+clj::telo.controller=> 
+#'telo.controller/nutrient-form-data
+clj::telo.controller=> 
+{:params {:q #:db{:id -1}}}
+clj::telo.controller=> 
+{:params {:q #:db{:id 0, :ident :db.part/db}}}
+clj::telo.controller=> 
+0
+clj::telo.controller=> 
+; Syntax error reading source at (REPL:21:131).
+; Map literal must contain an even number of forms
+[{:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:433" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:432" :fn "repl/read-eval-print"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.controller=> 
+; Syntax error reading source at (REPL:21:89).
+; Map literal must contain an even number of forms
+[{:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:433" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:432" :fn "repl/read-eval-print"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.controller=> 
+#'telo.controller/nutrient-form-data
+clj::telo.controller=> 
+; Syntax error compiling if at (src/telo/controller.clj:21:3).
+; Too few arguments to if
+[{:file "Compiler.java" :line 7115 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6118 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 5467 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 4029 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7105 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7095 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 38 :method "access$300" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 596 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 7181 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.controller=> 
+#'telo.controller/nutrient-form-data
+clj::telo.controller=> 
+#'telo.controller/nutrient-form-data
+clj::telo.controller=> 
+#'telo.model/find-all-nutrients
+clj::telo.model=> 
+; Execution error (ExceptionInfo) at datomic.query.support/incorrect! (support.clj:21).
+; Count of :keys/:strs/:syms must match count of :find
+[{:file "jar:file:/Users/nando/.m2/repository/com/datomic/query-support/0.8.27/query-support-0.8.27.jar!/datomic/query/support.clj:21" :fn "incorrect!"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/query-support/0.8.27/query-support-0.8.27.jar!/datomic/query/support.clj:19" :fn "incorrect!"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/query-support/0.8.27/query-support-0.8.27.jar!/datomic/query/support.clj:61" :fn "parse-as"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/query-support/0.8.27/query-support-0.8.27.jar!/datomic/query/support.clj:50" :fn "parse-as"  :method "invoke" :flags [:clj]}
+ {:file "query.clj" :line 609 :fn "q*"  :method "invokeStatic" :flags [:clj]}
+ {:file "query.clj" :line 605 :fn "q*"  :method "invoke" :flags [:clj]}
+ {:file "local_query.clj" :line 58 :fn "local-q"  :method "invokeStatic" :flags [:clj]}
+ {:file "local_query.clj" :line 52 :fn "local-q"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:28" :fn "fn"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:24" :fn "fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:33" :fn "fn/G"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api/impl.clj:142" :fn "call-q"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api/impl.clj:139" :fn "call-q"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:393" :fn "q"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:365" :fn "q"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:395" :fn "q"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:365" :fn "q"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 423 :method "invoke" :flags [:java]}
+ {:file "file:/Users/nando/projects/telogenix/src/telo/model.clj:50" :fn "find-all-nutrients"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/nando/projects/telogenix/src/telo/model.clj:49" :fn "find-all-nutrients"  :method "invoke" :flags [:project :repl :clj]}
+ {:file "NO_SOURCE_FILE" :line 145 :fn "eval815018"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "NO_SOURCE_FILE" :line 145 :fn "eval815018"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.model=> 
+#'telo.model/find-all-nutrients
+clj::telo.model=> 
+({:eid 4611681620380876900, :name "Magnesium", :grams-in-stock 0, :purchase-url "", :note ""}
+ {:eid 4611681620380876902, :name "Potassium", :grams-in-stock 0, :purchase-url "", :note ""}
+ {:eid 4611681620380876878,
+  :name "Vitamin A",
+  :grams-in-stock 40,
+  :purchase-url "http://www.bulksupplements.com/vitamin-a-palmitate.html",
+  :note "beta carotene and palmitate"}
+ {:eid 4611681620380876883,
+  :name "Vitamin B-1 as Sulbutiamine",
+  :grams-in-stock 89,
+  :purchase-url "powdercity.com",
+  :note "2 B-1 molecules"}
+ {:eid 4611681620380876893,
+  :name "Vitamin B-12",
+  :grams-in-stock 140,
+  :purchase-url "https://www.bulksupplements.com/products/vitamin-b12-1-percent-cyanocobalamin-powder",
+  :note "cyanocobalamin"}
+ {:eid 4611681620380876890,
+  :name "Vitamin B-2",
+  :grams-in-stock 85,
+  :purchase-url "http://www.bulksupplements.com/riboflavin-vitamin-b2.html",
+  :note "riboflavin"}
+ {:eid 4611681620380876891,
+  :name "Vitamin B-3 Niacin",
+  :grams-in-stock 220,
+  :purchase-url "http://www.bulksupplements.com/vitamin-b3-niacinamide-powder.html",
+  :note "niacinamide - http://purebulk.com/niacinamide-powder/"}
+ {:eid 4611681620380876892,
+  :name "Vitamin B-6",
+  :grams-in-stock 40,
+  :purchase-url "http://www.bulksupplements.com/vitamin-b6-pyridoxine-hcl.html",
+  :note "pyridoxine hydrochloride"}
+ {:eid 4611681620380876899, :name "Vitamin B-9 Folic Acid", :grams-in-stock 8, :purchase-url "", :note ""}
+ {:eid 4611681620380876895,
+  :name "Vitamin C - ascorbate",
+  :grams-in-stock 200,
+  :purchase-url "https://www.vitalundfitmit100.de/Vitamin-C-buffered-Calcium-ascorbate-200-g",
+  :note "calcium ascorbate"}
+ {:eid 4611681620380876894,
+  :name "Vitamin C - ascorbic acid",
+  :grams-in-stock 300,
+  :purchase-url "https://www.vitalundfitmit100.de/vitamin-c-powder-300g",
+  :note ""}
+ {:eid 4611681620380876896,
+  :name "Vitamin D3",
+  :grams-in-stock 0,
+  :purchase-url "",
+  :note "5000 IU Now brand from iherb.com"}
+ {:eid 4611681620380876897, :name "Vitamin E", :grams-in-stock 0, :purchase-url "", :note ""}
+ {:eid 4611681620380876898, :name "Vitamin K", :grams-in-stock 0, :purchase-url "", :note ""}
+ {:eid 4611681620380876901, :name "Zinc", :grams-in-stock 0, :purchase-url "", :note ""})
+clj::telo.model=> 
+#'telo.model/find-all-nutrients
+clj::telo.model=> 
+({:eid 4611681620380876900,
+  :name "Magnesium",
+  :grams-in-stock 0,
+  :purchase-url "",
+  :note "",
+  :category-name "Minerals"}
+ {:eid 4611681620380876902,
+  :name "Potassium",
+  :grams-in-stock 0,
+  :purchase-url "",
+  :note "",
+  :category-name "Minerals"}
+ {:eid 4611681620380876878,
+  :name "Vitamin A",
+  :grams-in-stock 40,
+  :purchase-url "http://www.bulksupplements.com/vitamin-a-palmitate.html",
+  :note "beta carotene and palmitate",
+  :category-name "Vitamins"}
+ {:eid 4611681620380876883,
+  :name "Vitamin B-1 as Sulbutiamine",
+  :grams-in-stock 89,
+  :purchase-url "powdercity.com",
+  :note "2 B-1 molecules",
+  :category-name "Vitamins"}
+ {:eid 4611681620380876893,
+  :name "Vitamin B-12",
+  :grams-in-stock 140,
+  :purchase-url "https://www.bulksupplements.com/products/vitamin-b12-1-percent-cyanocobalamin-powder",
+  :note "cyanocobalamin",
+  :category-name "Vitamins"}
+ {:eid 4611681620380876890,
+  :name "Vitamin B-2",
+  :grams-in-stock 85,
+  :purchase-url "http://www.bulksupplements.com/riboflavin-vitamin-b2.html",
+  :note "riboflavin",
+  :category-name "Vitamins"}
+ {:eid 4611681620380876891,
+  :name "Vitamin B-3 Niacin",
+  :grams-in-stock 220,
+  :purchase-url "http://www.bulksupplements.com/vitamin-b3-niacinamide-powder.html",
+  :note "niacinamide - http://purebulk.com/niacinamide-powder/",
+  :category-name "Vitamins"}
+ {:eid 4611681620380876892,
+  :name "Vitamin B-6",
+  :grams-in-stock 40,
+  :purchase-url "http://www.bulksupplements.com/vitamin-b6-pyridoxine-hcl.html",
+  :note "pyridoxine hydrochloride",
+  :category-name "Vitamins"}
+ {:eid 4611681620380876899,
+  :name "Vitamin B-9 Folic Acid",
+  :grams-in-stock 8,
+  :purchase-url "",
+  :note "",
+  :category-name "Vitamins"}
+ {:eid 4611681620380876895,
+  :name "Vitamin C - ascorbate",
+  :grams-in-stock 200,
+  :purchase-url "https://www.vitalundfitmit100.de/Vitamin-C-buffered-Calcium-ascorbate-200-g",
+  :note "calcium ascorbate",
+  :category-name "Vitamins"}
+ {:eid 4611681620380876894,
+  :name "Vitamin C - ascorbic acid",
+  :grams-in-stock 300,
+  :purchase-url "https://www.vitalundfitmit100.de/vitamin-c-powder-300g",
+  :note "",
+  :category-name "Vitamins"}
+ {:eid 4611681620380876896,
+  :name "Vitamin D3",
+  :grams-in-stock 0,
+  :purchase-url "",
+  :note "5000 IU Now brand from iherb.com",
+  :category-name "Vitamins"}
+ {:eid 4611681620380876897,
+  :name "Vitamin E",
+  :grams-in-stock 0,
+  :purchase-url "",
+  :note "",
+  :category-name "Vitamins"}
+ {:eid 4611681620380876898,
+  :name "Vitamin K",
+  :grams-in-stock 0,
+  :purchase-url "",
+  :note "",
+  :category-name "Vitamins"}
+ {:eid 4611681620380876901, :name "Zinc", :grams-in-stock 0, :purchase-url "", :note "", :category-name "Minerals"})
+clj::telo.model=> 
+#'telo.model/find-all-nutrients
+clj::telo.model=> 
+#'telo.model/find-all-nutrients
+clj::telo.model=> 
