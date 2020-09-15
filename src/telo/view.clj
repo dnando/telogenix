@@ -1,5 +1,6 @@
 (ns telo.view
   (:require [ring.util.response :refer [response]]
+            [clojure.string :refer [blank?]]
             [hiccup.core :refer [html]]
             [hiccup.page :refer [html5 include-js include-css]]
             [hiccup.element :refer [link-to]])
@@ -39,7 +40,7 @@
             :integrity "sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
             :crossorigin "anonymous"}]
     [:link {:rel "stylesheet"
-            :href "styles.css"}]]
+            :href "/styles.css"}]]
    [:body
     (nav req)
     [:div.container
@@ -80,13 +81,10 @@
                    [:tr
                     [:td [:a {:href (str "/edit-nutrient/" (:eid n))} (:name n)]]
                     [:td (:grams-in-stock n)]
-                    [:td  [:a {:href (:purchase-url n) :target "_blank"} [:img {:src "bi/link.svg" :width "24"}]]]
+                    [:td  (when-not (blank? (:purchase-url n))
+                            [:a {:href (:purchase-url n) :target "_blank"} [:img {:src "bi/link.svg" :width "24"}]])]
                     [:td (:note n)]
-                    [:td [:a.red-x {:href (str "/del-nutrient/" (:eid n))} "x"]]
-                    ]
-                   )]
-                ;;(pr-str (get-in req [:params :q]))
-                ])))
+                    [:td [:a.red-x {:href (str "/del-nutrient/" (:eid n))} "x"]]])]])))
 ;;(pr-str (get-in req [:params :q]))
 
 (defn nutrient-form
@@ -118,13 +116,85 @@
                  [:option {:value (:catid c) :selected (when (= (:catid c) (-> data :nutrient/category :db/id)) "selected")} (:name c)])
                ]]
              [:button.btn.btn-primary {:type "submit"} "Save"]]
-            (pr-str req)]))))
+            ]))))
 ;; (pr-str (get-in req [:path-params :id]))
+;; (pr-str req)
 
-(defn formulas
+(defn formula-list
   [req]
   (response
-   (layout req [:h1.display3 "Formulas"])))
+   (layout req [:div.wrp
+                [:h1.display3
+                 [:a.red-plus {:href "/edit-formula"} "+"] " Formulas"]
+                [:table.table
+                 [:tr
+                  [:td "Name"]]
+                 (for [f (get-in req [:params :q])]
+                   [:tr
+                    [:td [:a {:href (str "/edit-formula/" (:eid f))} (:name f)]]])]])))
+
+(defn formula-form
+  [req]
+  (response
+   (layout req [:div.wrp
+                [:h1.display3.mb-4 "Edit Formula"]
+                (let [data (get-in req [:params :q])]
+                  [:form {:method "post" :action "/edit-formula"}
+                   [:input {:type "hidden" :name "id" :value (:db/id data)}]
+                   [:label {:for "theName" :class "form-label"} "Name"]
+                   [:div.mb-3.input-group
+                    [:input {:type "text" :class "form-control" :id "theName" :name "name" :value (:formula/name data)}]
+                    [:button.btn.btn-primary {:type "submit"} "Save"]]])
+                (when (get-in req [:path-params :id])
+                  [:div.wrp
+                   [:h2.display4
+                    [:a.red-plus {:href (str "/add-formula-item/" (Long/parseLong (get-in req [:path-params :id])))} "+ "]
+                    "Formula Items"]
+                   [:table.table
+                    [:tr
+                     [:td "Nutrient"]
+                     [:td "Dose (mg/day)"]]
+                    (for [fi (get-in req [:params :qfi])]
+                      [:tr
+                       [:td [:a {:href (str "/edit-formula-item/" (:eid fi))} (:nutrient-name fi)]]
+                       [:td (:milligrams-per-day fi)]])]])])))
+
+(defn add-formula-item-form
+  [req]
+  (response
+   (layout req [:div.wrp
+                [:h1.display3.mb-4 "Add Formula Item"]
+                [:form {:method "post" :action "/save-formula-item"}
+                 [:input {:type "hidden" :name "id" :value "-1"}]
+                 [:input {:type "hidden" :name "formula" :value (Long/parseLong (get-in req [:path-params :formula-id]))}]
+                 [:div.mb-3
+                  [:label {:for "nutri" :class "form-label"} "Nutrient"]
+                  [:select.form-select {:name "nutrient" :id "nutri"}
+                   (for [n (get-in req [:params :qn])]
+                     [:option {:value (:eid n)} (:name n)])]]
+                 [:div.mb-3
+                  [:label {:class "form-label" :for "dose"} "Daily Dose"]
+                  [:input {:type "number" :class "form-control" :name "milligrams-per-day" :id "dose" :value "0"}]]
+                 [:button.btn.btn-primary {:type "submit"} "Save"]]])))
+
+(defn edit-formula-item-form
+  [req]
+  (response
+   (layout req [:div.wrp
+                [:h1.display3.mb-4 "Edit Formula Item"]
+                (let [data (get-in req [:params :q])]
+                  [:form {:method "post" :action "/save-formula-item"}
+                   [:input {:type "hidden" :name "id" :value (:db/id data)}]
+                   [:input {:type "hidden" :name "formula" :value (get-in data [:formula-item/formula :db/id])}]
+                   [:div.mb-3
+                    [:label {:for "nutri" :class "form-label"} "Nutrient"]
+                    [:select.form-select {:name "nutrient" :id "nutri"}
+                     (for [n (get-in req [:params :qn])]
+                       [:option {:value (:eid n) :selected (when (= (:eid n) (get-in data [:formula-item/nutrient :db/id])) "selected")} (:name n)])]]
+                   [:div.mb-3
+                    [:label {:class "form-label" :for "dose"} "Daily Dose"]
+                    [:input {:type "number" :class "form-control" :name "milligrams-per-day" :id "dose" :value (:formula-item/milligrams-per-day data)}]]
+                   [:button.btn.btn-primary {:type "submit"} "Save"]])])))
 
 (defn batches
   [req]

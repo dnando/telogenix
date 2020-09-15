@@ -31,7 +31,16 @@
                             :handler #'ct/edit-nutrient}]
      ["/del-nutrient/:id" {:get {:parameters {:path {:id int?}}}
                            :handler #'ct/delete-nutrient}]
-     ["/formulas" {:get ct/formulas}]
+     ["/formulas" {:get {:handler #'ct/formulas}}]
+     ["/edit-formula" {:get {:handler #'ct/edit-formula}
+                       :post {:handler #'ct/save-formula}}]
+     ["/edit-formula/:id" {:get {:parameters {:path {:id int?}}}
+                           :handler #'ct/edit-formula}]
+     ["/add-formula-item/:formula-id" {:get {:parameters {:path {:formula-id int?}}}
+                                       :handler #'ct/add-formula-item}]
+     ["/edit-formula-item/:id" {:get {:parameters {:path {:id int?}}}
+                                       :handler #'ct/edit-formula-item}]
+     ["/save-formula-item" {:post {:handler #'ct/save-formula-item}}]
      ["/batches" {:get ct/batches}]
      ["/dump" {:get handle-dump
                :post handle-dump}]]

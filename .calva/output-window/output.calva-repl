@@ -5036,3 +5036,1309 @@ clj::telo.model=>
 clj::telo.model=> 
 #'telo.model/find-all-nutrients
 clj::telo.model=> 
+#'telo.model/cats
+clj::telo.model=> 
+{:db-before
+ #datomic.core.db.Db{:id "telogenix", :basisT 70, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :db-after
+ #datomic.core.db.Db{:id "telogenix", :basisT 71, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :tx-data
+ [#datom[13194139533383 50 #inst "2020-09-10T21:39:10.036-00:00" 13194139533383 true] #datom[96757023244375 79 5 13194139533383 true] #datom[96757023244375 79 4 13194139533383 false] #datom[96757023244398 78 "Plant extracts" 13194139533383 true] #datom[96757023244398 79 4 13194139533383 true]],
+ :tempids {}}
+clj::telo.model=> 
+({:catid 87960930222164, :name "Vitamins", :sort-order 1}
+ {:catid 101155069755477, :name "Minerals", :sort-order 2}
+ {:catid 96757023244374, :name "Amino acids", :sort-order 3}
+ {:catid 96757023244398, :name "Plant extracts", :sort-order 4}
+ {:catid 96757023244375, :name "Herbs", :sort-order 5})
+clj::telo.model=> 
+; Syntax error compiling at (src/telo/view.clj:83:32).
+; Unable to resolve symbol: blank? in this context
+[{:file "Compiler.java" :line 6808 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3820 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7109 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3888 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7109 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3260 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6791 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6120 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 5467 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 4029 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7105 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7174 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.view=> 
+; Syntax error compiling at (src/telo/view.clj:83:37).
+; Unable to resolve symbol: blank? in this context
+[{:file "Compiler.java" :line 6808 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3820 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7109 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 2824 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7095 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3260 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6791 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3260 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6791 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3888 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7109 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6118 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6120 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6436 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7095 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 2829 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6120 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6436 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6120 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 5467 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 4029 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7105 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3820 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7109 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6346 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7095 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 2824 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6120 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6436 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7095 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 2829 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6120 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6436 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7095 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6120 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 2829 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7095 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6120 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6436 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7095 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7095 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6120 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6436 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7095 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6120 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 5467 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 4029 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7105 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 2666 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7095 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6120 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 5467 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 4029 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7105 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7095 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 38 :method "access$300" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6384 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7095 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7095 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3260 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6791 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3260 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6791 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3888 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7109 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3888 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7109 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6120 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 5467 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 4029 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7105 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7095 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 38 :method "access$300" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 596 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 7181 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.view=> 
+nil
+clj::telo.view=> 
+#'telo.view/nutrient-list
+clj::telo.view=> 
+#'telo.view/nutrient-form
+clj::telo.view=> 
+#'telo.model/telo-schema
+clj::telo.model=> 
+{:db-before
+ #datomic.core.db.Db{:id "telogenix", :basisT 109, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :db-after
+ #datomic.core.db.Db{:id "telogenix", :basisT 110, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :tx-data
+ [#datom[13194139533422 50 #inst "2020-09-11T22:48:14.562-00:00" 13194139533422 true] #datom[80 10 :test/some-url 13194139533422 true] #datom[80 40 23 13194139533422 true] #datom[80 41 36 13194139533422 true] #datom[0 13 80 13194139533422 true]],
+ :tempids {}}
+clj::telo.model=> 
+; Syntax error compiling at (src/telo/model.clj:182:3).
+; Unable to resolve symbol: test-cardinality-many in this context
+[{:file "Compiler.java" :line 6808 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3104 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6797 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3888 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7109 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6120 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 5467 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 4029 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7105 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7174 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.model=> 
+#'telo.model/test-cardinality-many
+clj::telo.model=> 
+{:db-before
+ #datomic.core.db.Db{:id "telogenix", :basisT 110, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :db-after
+ #datomic.core.db.Db{:id "telogenix", :basisT 111, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :tx-data
+ [#datom[13194139533423 50 #inst "2020-09-11T23:05:19.689-00:00" 13194139533423 true] #datom[96757023244429 80 "www.clojure.org" 13194139533423 true] #datom[96757023244430 80 "www.datomic.com" 13194139533423 true]],
+ :tempids {}}
+clj::telo.model=> 
+[[96757023244429 "www.clojure.org"] [96757023244430 "www.datomic.com"]]
+clj::telo.model=> 
+{:db-before
+ #datomic.core.db.Db{:id "telogenix", :basisT 111, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :db-after
+ #datomic.core.db.Db{:id "telogenix", :basisT 112, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :tx-data
+ [#datom[13194139533424 50 #inst "2020-09-11T23:10:17.988-00:00" 13194139533424 true] #datom[92358976733327 80 "www.clojure.org" 13194139533424 true] #datom[92358976733328 80 "www.datomic.com" 13194139533424 true]],
+ :tempids {}}
+clj::telo.model=> 
+[[96757023244429 "www.clojure.org"]
+ [92358976733327 "www.clojure.org"]
+ [92358976733328 "www.datomic.com"]
+ [96757023244430 "www.datomic.com"]]
+clj::telo.model=> 
+[{:eid 96757023244429, :url "www.clojure.org"}
+ {:eid 92358976733327, :url "www.clojure.org"}
+ {:eid 92358976733328, :url "www.datomic.com"}
+ {:eid 96757023244430, :url "www.datomic.com"}]
+clj::telo.model=> 
+#'telo.model/telo-schema
+clj::telo.model=> 
+{:db-before
+ #datomic.core.db.Db{:id "telogenix", :basisT 112, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :db-after
+ #datomic.core.db.Db{:id "telogenix", :basisT 113, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :tx-data
+ [#datom[13194139533425 50 #inst "2020-09-11T23:15:02.025-00:00" 13194139533425 true] #datom[81 10 :test/name 13194139533425 true] #datom[81 40 23 13194139533425 true] #datom[81 41 35 13194139533425 true] #datom[0 13 81 13194139533425 true]],
+ :tempids {}}
+clj::telo.model=> 
+{:db-before
+ #datomic.core.db.Db{:id "telogenix", :basisT 113, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :db-after
+ #datomic.core.db.Db{:id "telogenix", :basisT 114, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :tx-data
+ [#datom[13194139533426 50 #inst "2020-09-11T23:18:29.124-00:00" 13194139533426 true] #datom[96757023244429 80 "www.clojure.org" 13194139533426 false]],
+ :tempids {}}
+clj::telo.model=> 
+{:db-before
+ #datomic.core.db.Db{:id "telogenix", :basisT 114, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :db-after
+ #datomic.core.db.Db{:id "telogenix", :basisT 115, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :tx-data
+ [#datom[13194139533427 50 #inst "2020-09-11T23:18:43.914-00:00" 13194139533427 true] #datom[92358976733327 80 "www.clojure.org" 13194139533427 false]],
+ :tempids {}}
+clj::telo.model=> 
+{:db-before
+ #datomic.core.db.Db{:id "telogenix", :basisT 115, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :db-after
+ #datomic.core.db.Db{:id "telogenix", :basisT 116, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :tx-data
+ [#datom[13194139533428 50 #inst "2020-09-11T23:18:53.938-00:00" 13194139533428 true] #datom[92358976733328 80 "www.datomic.com" 13194139533428 false]],
+ :tempids {}}
+clj::telo.model=> 
+{:db-before
+ #datomic.core.db.Db{:id "telogenix", :basisT 116, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :db-after
+ #datomic.core.db.Db{:id "telogenix", :basisT 117, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :tx-data
+ [#datom[13194139533429 50 #inst "2020-09-11T23:19:07.282-00:00" 13194139533429 true] #datom[96757023244430 80 "www.datomic.com" 13194139533429 false]],
+ :tempids {}}
+clj::telo.model=> 
+[]
+clj::telo.model=> 
+#'telo.model/test-cardinality-many
+clj::telo.model=> 
+{:db-before
+ #datomic.core.db.Db{:id "telogenix", :basisT 117, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :db-after
+ #datomic.core.db.Db{:id "telogenix", :basisT 118, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :tx-data
+ [#datom[13194139533430 50 #inst "2020-09-11T23:22:07.198-00:00" 13194139533430 true] #datom[101155069755537 81 "Clojure sites" 13194139533430 true] #datom[101155069755538 80 "www.clojure.org" 13194139533430 true] #datom[101155069755539 80 "www.datomic.com" 13194139533430 true]],
+ :tempids {}}
+clj::telo.model=> 
+[]
+clj::telo.model=> 
+[{:eid 101155069755537, :name "Clojure sites"}]
+clj::telo.model=> 
+{:db/id 101155069755537, :test/name "Clojure sites"}
+clj::telo.model=> 
+#'telo.model/telo-schema
+clj::telo.model=> 
+{:db-before
+ #datomic.core.db.Db{:id "telogenix", :basisT 118, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :db-after
+ #datomic.core.db.Db{:id "telogenix", :basisT 119, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :tx-data
+ [#datom[13194139533431 50 #inst "2020-09-12T21:51:55.028-00:00" 13194139533431 true] #datom[82 10 :formula/name 13194139533431 true] #datom[82 40 23 13194139533431 true] #datom[82 41 35 13194139533431 true] #datom[83 10 :formula-item/nutrient 13194139533431 true] #datom[83 40 20 13194139533431 true] #datom[83 41 35 13194139533431 true] #datom[84 10 :formula-item/milligrams-per-day 13194139533431 true] #datom[84 40 22 13194139533431 true] #datom[84 41 35 13194139533431 true] #datom[85 10 :formula-item/formula-name 13194139533431 true] #datom[85 40 20 13194139533431 true] #datom[85 41 35 13194139533431 true] #datom[0 13 82 13194139533431 true] #datom[0 13 83 13194139533431 true] #datom[0 13 84 13194139533431 true] #datom[0 13 85 13194139533431 true]],
+ :tempids {}}
+clj::telo.model=> 
+#'telo.view/formulas
+clj::telo.view=> 
+#'telo.view/formula-list
+clj::telo.view=> 
+; Syntax error compiling at (src/telo/controller.clj:50:5).
+; No such var: m/retract-entity
+[{:file "Compiler.java" :line 6808 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3820 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7109 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6118 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6436 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7095 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6118 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 5467 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 4029 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7105 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7095 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 38 :method "access$300" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 596 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 7181 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.controller=> 
+#'telo.model/retract-entity
+clj::telo.model=> 
+#'telo.controller/delete-nutrient
+clj::telo.controller=> 
+#'telo.model/find-all-formulas
+clj::telo.model=> (find-all-formulas)
+
+#'telo.model/find-all-nutrients
+clj::telo.model=> 
+; Evaluating file: model.clj
+nil
+clj::telo.model=> 
+; Evaluating file: model.clj
+nil
+clj::telo.model=> 
+()
+clj::telo.model=> 
+#'telo.view/formula-list
+clj::telo.view=> 
+; Evaluating file: view.clj
+nil
+clj::telo.view=> 
+; Evaluating file: controller.clj
+; Syntax error compiling at (src/telo/controller.clj:26:32).
+; No such var: m/pull-formula
+; Evaluation of file controller.clj failed: class clojure.lang.Compiler$CompilerException
+#'telo.model/pull-formula
+clj::telo.model=> 
+#'telo.model/pull-formula
+clj::telo.model=> 
+; Evaluating file: controller.clj
+; Syntax error compiling at (src/telo/controller.clj:62:3).
+; No such var: view/formula-form
+; Evaluation of file controller.clj failed: class clojure.lang.Compiler$CompilerException
+#'telo.view/formula-form
+clj::telo.view=> 
+; Evaluating file: controller.clj
+nil
+clj::telo.controller=> 
+#'telo.controller/formulas
+clj::telo.controller=> 
+#'telo.view/formula-list
+clj::telo.view=> 
+; Syntax error compiling var at (src/telo/telogenix.clj:25:4).
+; Unable to resolve var: ct/save-formula in this context
+[{:file "Compiler.java" :line 7115 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3104 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6797 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3104 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6797 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3260 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6791 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3260 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6791 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3888 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7109 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3888 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7109 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 38 :method "access$300" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 596 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 7181 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.telogenix=> 
+#'telo.model/save-formula
+clj::telo.model=> 
+; Syntax error compiling at (src/telo/controller.clj:67:18).
+; Unable to resolve symbol: id in this context
+[{:file "Compiler.java" :line 6808 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3888 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7109 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7095 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 38 :method "access$300" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6384 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7095 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6118 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 5467 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 4029 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7105 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7095 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 38 :method "access$300" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 596 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 7181 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.controller=> 
+#'telo.controller/save-formula
+clj::telo.controller=> 
+#'telo.telogenix/app
+clj::telo.telogenix=> 
+#'telo.view/formula-list
+clj::telo.view=> 
+#'telo.view/formula-form
+clj::telo.view=> 
+; Syntax error macroexpanding clojure.core/let at (src/telo/view.clj:148:17).
+; data - failed: vector? at: [:bindings] spec: :clojure.core.specs.alpha/bindings
+[{:file "Compiler.java" :line 6972 :method "checkSpecs" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6988 :method "macroexpand1" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7093 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3260 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6791 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3888 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7109 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3888 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7109 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6120 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 5467 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 4029 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7105 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7095 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 38 :method "access$300" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 596 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 7181 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.view=> 
+#'telo.view/formula-form
+clj::telo.view=> 
+#'telo.view/formula-form
+clj::telo.view=> 
+#'telo.view/formula-list
+clj::telo.view=> 
+#'telo.view/formula-list
+clj::telo.view=> 
+#'telo.view/formula-form
+clj::telo.view=> 
+#'telo.view/formula-form
+clj::telo.view=> 
+#'telo.view/formula-form
+clj::telo.view=> 
+#'telo.view/formula-form
+clj::telo.view=> 
+#'telo.view/formula-form
+clj::telo.view=> 
+#'telo.view/formula-form
+clj::telo.view=> 
+#'telo.view/formula-form
+clj::telo.view=> 
+#'telo.view/formula-form
+clj::telo.view=> 
+#'telo.view/formula-form
+clj::telo.view=> 
+#'telo.view/formula-form
+clj::telo.view=> 
+#'telo.view/formula-form
+clj::telo.view=> 
+#'telo.view/formula-form
+clj::telo.view=> 
+#'telo.view/layout
+clj::telo.view=> 
+#'telo.view/formula-form
+clj::telo.view=> 
+#'telo.view/add-formula-item-form
+clj::telo.view=> 
+#'telo.view/add-formula-item-form
+clj::telo.view=> 
+#'telo.controller/add-formula-item
+clj::telo.controller=> 
+#'telo.telogenix/app
+clj::telo.telogenix=> 
+; Syntax error compiling at (src/telo/controller.clj:76:31).
+; Unable to resolve symbol: wrap-nutrients in this context
+[{:file "Compiler.java" :line 6808 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3820 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7109 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7095 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3888 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7109 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6120 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 5467 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 4029 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7105 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7095 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 38 :method "access$300" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 596 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 7181 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.controller=> 
+#'telo.controller/wrap-nutrients
+clj::telo.controller=> 
+#'telo.controller/add-formula-item
+clj::telo.controller=> 
+#'telo.view/add-formula-item-form
+clj::telo.view=> 
+#'telo.view/add-formula-item-form
+clj::telo.view=> 
+#'telo.view/add-formula-item-form
+clj::telo.view=> 
+#'telo.view/add-formula-item-form
+clj::telo.view=> 
+#'telo.view/add-formula-item-form
+clj::telo.view=> 
+#'telo.view/add-formula-item-form
+clj::telo.view=> 
+#'telo.view/add-formula-item-form
+clj::telo.view=> 
+#'telo.model/telo-schema
+clj::telo.model=> 
+{:db-before
+ #datomic.core.db.Db{:id "telogenix", :basisT 125, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :db-after
+ #datomic.core.db.Db{:id "telogenix", :basisT 126, :indexBasisT 0, :index-root-id nil, :asOfT nil, :sinceT nil, :raw nil},
+ :tx-data
+ [#datom[13194139533438 50 #inst "2020-09-13T18:19:28.978-00:00" 13194139533438 true] #datom[86 10 :formula-item/formula 13194139533438 true] #datom[86 40 20 13194139533438 true] #datom[86 41 35 13194139533438 true] #datom[0 13 86 13194139533438 true]],
+ :tempids {}}
+clj::telo.model=> 
+#'telo.model/save-formula-item
+clj::telo.model=> 
+#'telo.controller/save-formula-item
+clj::telo.controller=> 
+#'telo.model/save-formula-item
+clj::telo.model=> 
+#'telo.telogenix/app
+clj::telo.telogenix=> 
+#'telo.controller/save-formula-item
+clj::telo.controller=> 
+#'telo.view/add-formula-item-form
+clj::telo.view=> 
+#'telo.model/save-formula-item
+clj::telo.model=> 
+{:status 302, :headers {"Location" "/edit-formula/"}, :body ""}
+clj::telo.controller=> 
+#'telo.controller/save-formula-item
+clj::telo.controller=> 
+#'telo.telogenix/app
+clj::telo.telogenix=> 
+#'telo.view/add-formula-item-form
+clj::telo.view=> 
+#'telo.model/find-all-formula-items
+clj::telo.model=> 
+; Execution error (ExceptionInfo) at datomic.client.api.impl/incorrect (impl.clj:43).
+; Query args must include a database
+[{:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api/impl.clj:43" :fn "incorrect"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api/impl.clj:41" :fn "incorrect"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api/impl.clj:143" :fn "call-q"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api/impl.clj:139" :fn "call-q"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:393" :fn "q"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:365" :fn "q"  :method "invoke" :flags [:clj]}
+ {:file "file:/Users/nando/projects/telogenix/src/telo/model.clj:184" :fn "find-all-formula-items"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/nando/projects/telogenix/src/telo/model.clj:182" :fn "find-all-formula-items"  :method "invoke" :flags [:project :repl :clj]}
+ {:file "NO_SOURCE_FILE" :line 198 :fn "eval1936060"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "NO_SOURCE_FILE" :line 198 :fn "eval1936060"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.model=> 
+#'telo.model/find-all-formula-items
+clj::telo.model=> 
+; Execution error (ExceptionInfo) at datomic.core.error/raise (error.clj:55).
+; :db.error/too-few-inputs Query expected 2 inputs but received 1
+[{:file "error.clj" :line 55 :fn "raise"  :method "invokeStatic" :flags [:clj]}
+ {:file "error.clj" :line 43 :fn "raise"  :method "invoke" :flags [:clj]}
+ {:file "error.clj" :line 64 :fn "arg"  :method "invokeStatic" :flags [:clj]}
+ {:file "error.clj" :line 59 :fn "arg"  :method "invoke" :flags [:clj]}
+ {:file "error.clj" :line 62 :fn "arg"  :method "invokeStatic" :flags [:clj]}
+ {:file "error.clj" :line 59 :fn "arg"  :method "invoke" :flags [:clj]}
+ {:file "query.clj" :line 615 :fn "q*"  :method "invokeStatic" :flags [:clj]}
+ {:file "query.clj" :line 605 :fn "q*"  :method "invoke" :flags [:clj]}
+ {:file "local_query.clj" :line 58 :fn "local-q"  :method "invokeStatic" :flags [:clj]}
+ {:file "local_query.clj" :line 52 :fn "local-q"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:28" :fn "fn"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:24" :fn "fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:33" :fn "fn/G"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api/impl.clj:142" :fn "call-q"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api/impl.clj:139" :fn "call-q"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:393" :fn "q"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:365" :fn "q"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:395" :fn "q"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:365" :fn "q"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 423 :method "invoke" :flags [:java]}
+ {:file "file:/Users/nando/projects/telogenix/src/telo/model.clj:184" :fn "find-all-formula-items"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/nando/projects/telogenix/src/telo/model.clj:182" :fn "find-all-formula-items"  :method "invoke" :flags [:project :repl :clj]}
+ {:file "NO_SOURCE_FILE" :line 199 :fn "eval1937035"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "NO_SOURCE_FILE" :line 199 :fn "eval1937035"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.model=> 
+#'telo.model/find-all-formula-items
+clj::telo.model=> 
+; Execution error (ExceptionInfo) at datomic.core.error/raise (error.clj:55).
+; :db.error/too-few-inputs Query expected 2 inputs but received 1
+[{:file "error.clj" :line 55 :fn "raise"  :method "invokeStatic" :flags [:clj]}
+ {:file "error.clj" :line 43 :fn "raise"  :method "invoke" :flags [:clj]}
+ {:file "error.clj" :line 64 :fn "arg"  :method "invokeStatic" :flags [:clj]}
+ {:file "error.clj" :line 59 :fn "arg"  :method "invoke" :flags [:clj]}
+ {:file "error.clj" :line 62 :fn "arg"  :method "invokeStatic" :flags [:clj]}
+ {:file "error.clj" :line 59 :fn "arg"  :method "invoke" :flags [:clj]}
+ {:file "query.clj" :line 615 :fn "q*"  :method "invokeStatic" :flags [:clj]}
+ {:file "query.clj" :line 605 :fn "q*"  :method "invoke" :flags [:clj]}
+ {:file "local_query.clj" :line 58 :fn "local-q"  :method "invokeStatic" :flags [:clj]}
+ {:file "local_query.clj" :line 52 :fn "local-q"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:28" :fn "fn"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:24" :fn "fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:33" :fn "fn/G"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api/impl.clj:142" :fn "call-q"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api/impl.clj:139" :fn "call-q"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:393" :fn "q"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:365" :fn "q"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:395" :fn "q"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:365" :fn "q"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 423 :method "invoke" :flags [:java]}
+ {:file "file:/Users/nando/projects/telogenix/src/telo/model.clj:184" :fn "find-all-formula-items"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/nando/projects/telogenix/src/telo/model.clj:182" :fn "find-all-formula-items"  :method "invoke" :flags [:project :repl :clj]}
+ {:file "NO_SOURCE_FILE" :line 196 :fn "eval1941898"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "NO_SOURCE_FILE" :line 196 :fn "eval1941898"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.model=> 
+#'telo.model/find-all-formula-items
+clj::telo.model=> 
+; Execution error (ExceptionInfo) at datomic.core.error/raise (error.clj:55).
+; :db.error/too-few-inputs Query expected 2 inputs but received 1
+[{:file "error.clj" :line 55 :fn "raise"  :method "invokeStatic" :flags [:clj]}
+ {:file "error.clj" :line 43 :fn "raise"  :method "invoke" :flags [:clj]}
+ {:file "error.clj" :line 64 :fn "arg"  :method "invokeStatic" :flags [:clj]}
+ {:file "error.clj" :line 59 :fn "arg"  :method "invoke" :flags [:clj]}
+ {:file "error.clj" :line 62 :fn "arg"  :method "invokeStatic" :flags [:clj]}
+ {:file "error.clj" :line 59 :fn "arg"  :method "invoke" :flags [:clj]}
+ {:file "query.clj" :line 615 :fn "q*"  :method "invokeStatic" :flags [:clj]}
+ {:file "query.clj" :line 605 :fn "q*"  :method "invoke" :flags [:clj]}
+ {:file "local_query.clj" :line 58 :fn "local-q"  :method "invokeStatic" :flags [:clj]}
+ {:file "local_query.clj" :line 52 :fn "local-q"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:28" :fn "fn"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:24" :fn "fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:33" :fn "fn/G"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api/impl.clj:142" :fn "call-q"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api/impl.clj:139" :fn "call-q"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:393" :fn "q"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:365" :fn "q"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:395" :fn "q"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:365" :fn "q"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 423 :method "invoke" :flags [:java]}
+ {:file "file:/Users/nando/projects/telogenix/src/telo/model.clj:184" :fn "find-all-formula-items"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/nando/projects/telogenix/src/telo/model.clj:182" :fn "find-all-formula-items"  :method "invoke" :flags [:project :repl :clj]}
+ {:file "NO_SOURCE_FILE" :line 195 :fn "eval1943845"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "NO_SOURCE_FILE" :line 195 :fn "eval1943845"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.model=> 
+#'telo.model/find-all-formula-items
+clj::telo.model=> 
+[{:eid 4611681620380876949, :nutrient-name "Vitamin A", :milligrams-per-day 55}]
+clj::telo.model=> 
+#'telo.model/find-all-formula-items
+clj::telo.model=> 
+[{:eid 4611681620380876949, :nutrient-name "Vitamin A", :milligrams-per-day 55, :sort-order 1}]
+clj::telo.model=> 
+#'telo.model/find-all-formula-items
+clj::telo.model=> 
+[{:eid 4611681620380876949,
+  :nutrient-name "Vitamin A",
+  :milligrams-per-day 55,
+  :sort-order 1,
+  :neid 4611681620380876878}]
+clj::telo.model=> 
+#'telo.model/find-all-formula-items
+clj::telo.model=> 
+({:eid 4611681620380876949,
+  :nutrient-name "Vitamin A",
+  :milligrams-per-day 55,
+  :sort-order 1,
+  :neid 4611681620380876878})
+clj::telo.model=> 
+#'telo.model/find-all-formula-items
+clj::telo.model=> 
+({:eid 4611681620380876949,
+  :nutrient-name "Vitamin A",
+  :milligrams-per-day 55,
+  :sort-order 1,
+  :neid 4611681620380876878})
+clj::telo.model=> 
+#'telo.model/find-all-formula-items
+clj::telo.model=> 
+({:eid 4611681620380876949,
+  :nutrient-name "Vitamin A",
+  :milligrams-per-day 55,
+  :sort-order 1,
+  :neid 4611681620380876878})
+clj::telo.model=> 
+#'telo.controller/wrap-formula-items
+clj::telo.controller=> 
+#'telo.controller/save-formula
+clj::telo.controller=> 
+#'telo.view/formula-form
+clj::telo.view=> 
+#'telo.controller/wrap-formula-items
+clj::telo.controller=> (rq)
+#'telo.model/find-all-nutrients
+clj::telo.controller=> (eval rq)
+#'telo.model/find-all-nutrients
+clj::telo.controller=> 
+#'telo.controller/wrap-formula-items
+clj::telo.controller=> 
+#'telo.controller/edit-formula
+clj::telo.controller=> 
+#'telo.controller/wrap-formula-items
+clj::telo.controller=> 
+#'telo.view/formula-form
+clj::telo.view=> 
+#'telo.controller/wrap-formula-items
+clj::telo.controller=> 
+#'telo.view/formula-form
+clj::telo.view=> 
+#'telo.controller/edit-formula
+clj::telo.controller=> 
+#'telo.controller/wrap-formula-items
+clj::telo.controller=> 
+#'telo.controller/wrap-formula-items
+clj::telo.controller=> 
+#'telo.controller/edit-formula
+clj::telo.controller=> 
+#'telo.controller/formula-form-data
+clj::telo.controller=> 
+; Syntax error compiling at (src/telo/controller.clj:75:22).
+; Unable to resolve symbol: wrap-formula-form-data in this context
+[{:file "Compiler.java" :line 6808 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3820 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7109 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3888 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7109 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7095 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3888 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7109 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6120 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 5467 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 4029 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7105 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7095 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 38 :method "access$300" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 596 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7107 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 7181 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.controller=> 
+#'telo.controller/wrap-formula-form-data
+clj::telo.controller=> 
+#'telo.controller/edit-formula
+clj::telo.controller=> 
+; Evaluating file: controller.clj
+nil
+clj::telo.controller=> 
+#'telo.view/formula-form
+clj::telo.view=> 
+#'telo.view/formula-form
+clj::telo.view=> 
+#'telo.view/formula-form
+clj::telo.view=> 
+#'telo.view/edit-formula-item-form
+clj::telo.view=> 
+#'telo.controller/edit-formula-item
+clj::telo.controller=> 
+#'telo.telogenix/app
+clj::telo.telogenix=> 
+#'telo.view/formula-form
+clj::telo.view=> 
+#'telo.view/edit-formula-item-form
+clj::telo.view=> 
+#'telo.model/pull-formula-item
+clj::telo.model=> 
+{:db/id 4611681620380876949,
+ :formula-item/nutrient #:db{:id 4611681620380876878},
+ :formula-item/milligrams-per-day 55,
+ :formula-item/formula #:db{:id 4611681620380876948}}
+clj::telo.model=> 
+#'telo.model/pull-formula-item
+clj::telo.model=> 
+{:db/id 4611681620380876949,
+ :formula-item/nutrient #:db{:id 4611681620380876878},
+ :formula-item/milligrams-per-day 55,
+ :formula-item/formula #:db{:id 4611681620380876948}}
+clj::telo.model=> 
+#'telo.model/pull-formula-item
+clj::telo.model=> 
+; Execution error (ExceptionInfo) at datomic.core.error/raise (error.clj:55).
+; :pull/duplicate-attribute Multiple specifications for :formula-item/nutrient
+[{:file "LocalCache.java" :line 2049 :method "get" :flags [:java]}
+ {:file "LocalCache.java" :line 3849 :method "get" :flags [:java]}
+ {:file "LocalCache.java" :line 3873 :method "getOrLoad" :flags [:java]}
+ {:file "LocalCache.java" :line 4798 :method "get" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:71" :fn "fn"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:66" :fn "fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:63" :fn "fn/G"  :method "invoke" :flags [:clj]}
+ {:file "cache.clj" :line 120 :fn "valAt"  :method "valAt" :flags [:clj]}
+ {:file "RT.java" :line 760 :method "get" :flags [:java]}
+ {:file "pull.clj" :line 503 :fn "pull-1"  :method "invokeStatic" :flags [:clj]}
+ {:file "pull.clj" :line 500 :fn "pull-1"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:58" :fn "fn"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:24" :fn "fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:126" :fn "fn/G"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:344" :fn "pull"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/com/datomic/client-api/0.8.54/client-api-0.8.54.jar!/datomic/client/api.clj:328" :fn "pull"  :method "invoke" :flags [:clj]}
+ {:file "file:/Users/nando/projects/telogenix/src/telo/model.clj:199" :fn "pull-formula-item"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/nando/projects/telogenix/src/telo/model.clj:197" :fn "pull-formula-item"  :method "invoke" :flags [:project :repl :clj]}
+ {:file "NO_SOURCE_FILE" :line 209 :fn "eval2213417"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "NO_SOURCE_FILE" :line 209 :fn "eval2213417"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.model=> 
+#'telo.model/pull-formula-item
+clj::telo.model=> 
+{:db/id 4611681620380876949,
+ :formula-item/nutrient #:nutrient{:name "Vitamin A"},
+ :formula-item/milligrams-per-day 55,
+ :formula-item/formula #:db{:id 4611681620380876948}}
+clj::telo.model=> 
+#'telo.model/pull-formula-item
+clj::telo.model=> 
+{:db/id 4611681620380876949,
+ :formula-item/nutrient #:nutrient{:name "Vitamin A"},
+ :formula-item/milligrams-per-day 55,
+ :formula-item/formula #:db{:id 4611681620380876948}}
+clj::telo.model=> 
+#'telo.model/pull-formula-item
+clj::telo.model=> 
+{:db/id 4611681620380876949,
+ :formula-item/nutrient {:db/id 4611681620380876878, :nutrient/name "Vitamin A"},
+ :formula-item/milligrams-per-day 55,
+ :formula-item/formula #:db{:id 4611681620380876948}}
+clj::telo.model=> 
+#'telo.model/pull-formula-item
+clj::telo.model=> 
+{:db/id 4611681620380876949,
+ :formula-item/nutrient {:db/id 4611681620380876878, :nutrient/name "Vitamin A"},
+ :formula-item/milligrams-per-day 55,
+ :formula-item/formula {:db/id 4611681620380876948, :formula/name "Complete Daily Multivitamin"}}
+clj::telo.model=> 
+#'telo.model/pull-formula-item
+clj::telo.model=> 
+{:db/id 4611681620380876949,
+ :formula-item/nutrient
+ {:db/id 4611681620380876878, :nutrient/name "Vitamin A", :nutrient/category #:category{:name "Vitamins"}},
+ :formula-item/milligrams-per-day 55,
+ :formula-item/formula {:db/id 4611681620380876948, :formula/name "Complete Daily Multivitamin"}}
+clj::telo.model=> 
+{:db/id 4611681620380876949,
+ :formula-item/nutrient
+ {:db/id 4611681620380876878, :nutrient/name "Vitamin A", :nutrient/category #:category{:name "Vitamins"}},
+ :formula-item/milligrams-per-day 55,
+ :formula-item/formula {:db/id 4611681620380876948, :formula/name "Complete Daily Multivitamin"}}
+clj::telo.model=> 
+#'telo.model/n-item
+clj::telo.model=> 
+; Syntax error compiling at (src/telo/model.clj:225:3).
+; Unable to resolve symbol: d-item in this context
+[{:file "Compiler.java" :line 6808 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3888 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7109 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6120 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 5467 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 4029 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7105 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7174 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.model=> 
+#'telo.model/n-item
+clj::telo.model=> 
+; Syntax error compiling at (src/telo/model.clj:225:3).
+; Unable to resolve symbol: d-item in this context
+[{:file "Compiler.java" :line 6808 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 3888 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7109 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 6120 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 5467 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 4029 :method "parse" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7105 :method "analyzeSeq" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6789 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7174 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/nando/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 745 :method "run" :flags [:java]}]
+clj::telo.model=> 
+"Vitamins"
+clj::telo.model=> 
+#'telo.model/formula-item
+clj::telo.model=> 
+"Vitamins"
+clj::telo.model=> 
+#'telo.controller/wrap-formula-item
+clj::telo.controller=> 
+#'telo.controller/wrap-formula-item
+clj::telo.controller=> 
+#'telo.view/edit-formula-item-form
+clj::telo.view=> 
+#'telo.controller/wrap-formula-item
+clj::telo.controller=> 
+#'telo.controller/edit-formula-item
+clj::telo.controller=> 
+#'telo.view/edit-formula-item-form
+clj::telo.view=> 
+#'telo.view/edit-formula-item-form
+clj::telo.view=> 
+#'telo.view/edit-formula-item-form
+clj::telo.view=> 
+#'telo.view/edit-formula-item-form
+clj::telo.view=> 
+#'telo.controller/wrap-formula-item
+clj::telo.controller=> 
+#'telo.controller/edit-formula-item
+clj::telo.controller=> 
+#'telo.view/edit-formula-item-form
+clj::telo.view=> 
+#'telo.view/edit-formula-item-form
+clj::telo.view=> 
+#'telo.view/edit-formula-item-form
+clj::telo.view=> 
+#'telo.view/edit-formula-item-form
+clj::telo.view=> 
+#'telo.view/edit-formula-item-form
+clj::telo.view=> 
+#'telo.view/edit-formula-item-form
+clj::telo.view=> 
+#'telo.view/edit-formula-item-form
+clj::telo.view=> 
+#'telo.view/formula-form
+clj::telo.view=> 
+#'telo.view/nutrient-list
+clj::telo.view=> 
