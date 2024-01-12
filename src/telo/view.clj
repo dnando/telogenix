@@ -5,6 +5,9 @@
             [hiccup.page :refer [html5 include-js include-css]]
             [hiccup.element :refer [link-to]])
  )
+;; https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html
+(def date-format (java.text.SimpleDateFormat. "dd-MM-yyyy kk:mm"))
+(def date-only-format (java.text.SimpleDateFormat. "dd-MM-yyyy"))
 
 (defn nav [req]
   [:nav {:class "navbar navbar-expand-lg navbar-light bg-light pl-4"}
@@ -60,12 +63,16 @@
   [req]
   (assoc-in req [:params :title] "Home")
   (response
-   (layout req '([:h1.display3 "Hello there!"]
-                     [:p "what is going on?"]
-                     ))))
+   (layout req '([:h1.display3 "Telogenix"]
+                 [:p [a {:href "/sign-up"} "Create New Account"]]
+                 [:p [a {:href "/login"} "Login"]]
+                 [:p [a {:href "/reset-password"} "Reset Password"]]
+                 [:p [a {:href "/logout"} "Logout"]]
+                 ))))
 
 (defn nutrient-list
   [req]
+  (assoc-in req [:params :title] "Nutrient List")
   (response
    (layout req [:div.wrp
                 [:h1.display3
@@ -89,6 +96,7 @@
 
 (defn nutrient-form
   [req]
+  (assoc-in req [:params :title] "Add / Edit Nutrient")
   (response
    (layout req
            (let [data (get-in req [:params :q])]
@@ -119,9 +127,11 @@
             ]))))
 ;; (pr-str (get-in req [:path-params :id]))
 ;; (pr-str req)
+;; TODO - missing delete capability in the Formula list below
 
-(defn formula-list
+(defn formula-list 
   [req]
+  (assoc-in req [:params :title] "Formulas")
   (response
    (layout req [:div.wrp
                 [:h1.display3
@@ -135,6 +145,7 @@
 
 (defn formula-form
   [req]
+  (assoc-in req [:params :title] "Add / Edit Formula")
   (response
    (layout req [:div.wrp
                 [:h1.display3.mb-4 "Edit Formula"]
@@ -161,6 +172,7 @@
 
 (defn add-formula-item-form
   [req]
+  (assoc-in req [:params :title] "Add Formula Item")
   (response
    (layout req [:div.wrp
                 [:h1.display3.mb-4 "Add Formula Item"]
@@ -179,6 +191,7 @@
 
 (defn edit-formula-item-form
   [req]
+  (assoc-in req [:params :title] "Edit Formula Item")
   (response
    (layout req [:div.wrp
                 [:h1.display3.mb-4 "Edit Formula Item"]
@@ -198,8 +211,160 @@
 
 (defn batches
   [req]
+  (assoc-in req [:params :title] "Batches")
   (response
-   (layout req [:h1.display3 "Batches"])))
+   (layout req 
+           [:div.wrp
+            [:h1.display3
+             [:a.red-plus {:href "/add-batch"} "+"] " Batches"]
+            [:table.table 
+             [:tr
+              [:td "Formula Name"]
+              [:td "Doses/Days"]
+              [:td "Date"]
+              [:td ""]]
+             (for [b (get-in req [:params :q])]
+               [:tr
+                [:td [:a {:href (str "/batch-items/" (:eid b))} (:formula-name b)]]
+                [:td (:doses b)]
+                [:td (.format date-format (:date b))]
+                [:td [:a.red-x {:href (str "/del-batch/" (:eid b))} "x"]]])]
+            [:p ]
+            ]
+    )))
+
+(defn add-batch-form 
+  [req]
+  (assoc-in req [:params :title] "Add Batch")
+  (response
+   (layout req 
+           [:div.wrp 
+            [:h1.display3.mb-4 "Add Batch"]
+            [:form {:method "post" :action "save-new-batch"}
+             [:div.mb-3
+              [:label {:for "formula" :class "form-label"} "Formula"]
+              [:select.form-select {:name "formula" :id "formula"}
+               (for [f (get-in req [:params :qf])]
+                 [:option {:value (:eid f)} (:name f)])]]
+             [:div.mb-3
+              [:label {:class "form-label" :for "doses"} "Days / Doses"]
+              [:input {:type "number" :class "form-control" :name "doses" :id "doses"}]]
+             [:button.btn.btn-primary {:type "submit"} "Save"]
+             ]
+            
+            ])))
+
+(defn batch-items
+  [req]
+  (response 
+   (layout req 
+           
+           [:div.wrp
+            [:h1.display3.mb-3 "Batch Items"]
+            [:table.tbl
+             [:tr
+              [:td "Name"]
+              [:td (get-in req [:params :qb 0 :formula-name])]]
+             [:tr
+              [:td "Doses"]
+              [:td (get-in req [:params :qb 0 :doses])]]
+             [:tr
+              [:td "Batch Date"]
+              [:td (.format date-format (get-in req [:params :qb 0 :date]))]]
+             [:tr
+              [:td "Total Weight"]
+              [:td (* (get-in req [:params :qb 0 :total-weight]) 0.001) " g"]]
+             [:tr
+              [:td "Dose Weight"]
+              [:td (* 
+                    (/ (get-in req [:params :qb 0 :total-weight]) (get-in req [:params :qb 0 :doses])) 
+                    0.001) " g"]]
+             [:tr
+              [:td "Nutrient Count"]
+              [:td (get-in req [:params :qb 0 :count])]]
+             ]
+            [:table.table
+             [:tr
+              [:th "Nutrient"]
+              [:th "Weight mg"]
+              [:th "Complete?"]]
+             (for [n (get-in req [:params :qbi])]
+               [:tr
+                [:td (if (:complete n) (:name n) [:a {:href (str "/edit-batch-item/" (:eid n))} (:name n)]) 
+                 ]
+                [:td (:weight n)]
+                [:td (:complete n)]]
+               )
+             ]
+            
+            ;; [:div (pr-str (get-in req [:params :qbi]))]
+            
+            ])))
+
+
+
+(defn edit-batch-item-form
+  [req]
+  (response
+   (layout req [:div.wrp
+                [:h1.display3.mb-4 "Edit Batch Item"]
+                (let [data (get-in req [:params :qbi])]
+                  [:form {:method "post" :action "/save-batch-item"}
+                   [:input {:type "hidden" :name "id" :value (:db/id data)}]
+                   ;; Need to add hidden field to pass through batch id so user is returned to list of batch items
+                   [:input {:type "hidden" :name "batch-id" :value (get-in data [:batch-item/batch :db/id])}]
+                   [:div.mb-3
+                    [:label {:for "nutri" :class "form-label"} "Nutrient"]
+                    [:input {:class "form-control" :type "string" :name "nutrient" :disabled true :id "nutri" :value (get-in data [:batch-item/nutrient :nutrient/name])}]]
+                   [:div.mb-3
+                    [:label {:class "form-label" :for "wt"} "Batch Weight (mg)"]
+                    [:input {:type "number" :class "form-control" :name "weight" :id "wt" :value (:batch-item/weight data)}]]
+                   [:div.mb-3.form-check 
+                    ;; NOTE how the checked attribute is programmed. 
+                    [:input {:class "form-check-input" :name "complete?" :type "checkbox" :value "1" :checked (boolean (:batch-item/complete? data) )} ]
+                    [:label {:class "form-check-label" :for "comp"} "Completed?"]
+                    ]
+                   [:button.btn.btn-primary {:type "submit"} "Save"]] 
+                  )
+                ;; [:div (pr-str (get-in req [:params :qbi]))]
+                ])))
+
+(defn new-user-form
+  [req]
+  (assoc-in req [:params :title] "New User Account")
+  (response
+   (layout req
+           [:div.wrp
+            [:h1.display3.mb-4 "New User Account"]
+            (let [data (get-in req [:params :data])]
+              [:form {:method "post" :action "save-new-user"}
+               [:div.mb-3
+                [:label {:for "theName" :class "form-label"} "Name"]
+                [:input {:type "text" :class "form-control" :id "theName" :name "name" :value (:name data)}]]
+               [:div.mb-3
+                [:label {:for "email" :class "form-label"} "Email"]
+                [:input {:type "text" :class "form-control" :id "email" :name "email" :value (:email data)}]]
+               [:div.mb-3
+                [:label {:for "password" :class "form-label"} "Password"]
+                [:input {:type "password" :class "form-control" :id "password" :name "password" :value (:password data)}]]
+               [:div.mb-3
+                [:label {:for "password2" :class "form-label"} "Password Repeat"]
+                [:input {:type "password2" :class "form-control" :id "password2" :name "password2" :value (:password2 data)}]]
+               [:button.btn.btn-primary {:type "submit"} "Save"]])])))
+
+(comment 
+  
+
+  (def x {:db/id 87960930222289,
+   :batch-item/nutrient #:nutrient{:name "Vitamin A"},
+   :batch-item/weight 4950,
+   :batch-item/complete? false,
+   :batch-item/batch #:db{:id 96757023244496}})
+  
+  (get-in x [:batch-item/batch :db/id])
+  
+  )
+
 
 (defn inspect [req]
   (response

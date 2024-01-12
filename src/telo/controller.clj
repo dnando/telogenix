@@ -75,6 +75,11 @@
   [req]
   (view/formula-list (assoc-in req [:params :q] (m/find-all-formulas))))
 
+(defn delete-formula [req]
+  (let [eid (Long/parseLong (get-in req [:path-params :id]))]
+    (m/retract-entity eid))
+  (resp/redirect "/formulas"))
+
 (defn- wrap-formula-form-data 
   "If editing an existing formula, this function injects the form data into the request,
    otherwise it injects default form data for a new formula"
@@ -129,9 +134,71 @@
   (resp/redirect (str "/edit-formula/" (get-in req [:params :formula])))
   )
 
-(defn batches [req]
-  (view/batches req))
+(defn delete-formula-item [req]
+  (let [eid (Long/parseLong (get-in req [:path-params :id])) 
+        formula-item (m/pull-formula-item eid)
+        formula-eid (get-in formula-item [:formula-item/formula :db/id])]
+    (m/retract-entity eid)
+  (resp/redirect (str "/formulas/" formula-eid))))
 
+(defn batches [req]
+  (view/batches (assoc-in req [:params :q] (m/find-all-batches))))
+
+(defn add-batch [req] 
+  (view/add-batch-form (assoc-in req [:params :qf] (m/find-all-formulas))))
+
+(defn save-new-batch [req] 
+  (let [data (-> req 
+                 :params
+                 (update :formula #(Long/parseLong %))
+                 (update :doses #(Long/parseLong %)))]
+    (m/save-new-batch data))
+  (resp/redirect "/batches"))
+
+(defn- wrap-batch
+  [req] 
+    (assoc-in req [:params :qb] (m/find-batch (Long/parseLong (get-in req [:path-params :id]))))
+  )
+
+(defn- wrap-batch-items
+  [req]
+  (assoc-in req [:params :qbi] (m/find-batch-items (Long/parseLong (get-in req [:path-params :id]))))
+  )
+
+(defn batch-items 
+  [req]
+  (view/batch-items (-> req wrap-batch wrap-batch-items))
+  )
+
+(defn delete-batch [req]
+  (let [eid (Long/parseLong (get-in req [:path-params :id]))]
+    (m/retract-entity eid))
+  (resp/redirect "/batches"))
+
+(defn- wrap-batch-item
+  [req]
+  (assoc-in req [:params :qbi] (m/pull-batch-item (Long/parseLong (get-in req [:path-params :id])))))
+
+(defn edit-batch-item [req]
+  (view/edit-batch-item-form (-> req wrap-batch-item)))
+
+(defn save-batch-item [req]
+  (let [data (-> req
+                 :params
+                 (update :id #(Long/parseLong %))
+                 (update :batch-id #(Long/parseLong %))
+                 (update :weight #(Long/parseLong (empty-to-zero %)))
+                 (update :complete? #(= "1" %)))]
+    (m/save-batch-item data))
+  (let [bi (m/pull-batch-item (Long/parseLong (get-in req [:params :id])))]
+    (when (:batch-item/complete? bi)
+      (-> 
+       (hash-map :nid (get-in bi [:batch-item/nutrient :db/id])
+                 :new-grams-in-stock (m/subtract-batch-item-from-stock bi))
+       (m/update-nutrient-weight))
+      ) 
+    ) 
+  (resp/redirect (str "/batch-items/" (get-in req [:params :batch-id]))))
 
   
  (comment

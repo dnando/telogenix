@@ -2,10 +2,9 @@
   (:gen-class)
   (:require [org.httpkit.server :as app-server]
             [reitit.ring :as ring]
-            [reitit.ring.middleware.multipart :as multipart]
+            ;; [reitit.ring.middleware.multipart :as multipart]
             [reitit.ring.middleware.parameters :as parameters]
             [ring.middleware.keyword-params :refer [wrap-keyword-params]]
-            [telo.view :as view]
             [telo.controller :as ct]
             [ring.handler.dump :refer [handle-dump]]))
 
@@ -40,12 +39,30 @@
                                        :handler #'ct/add-formula-item}]
      ["/edit-formula-item/:id" {:get {:parameters {:path {:id int?}}}
                                        :handler #'ct/edit-formula-item}]
+     ["/del-formula-item/:id" {:get {:parameters {:path {:id int?}}}
+                           :handler #'ct/delete-formula-item}]
      ["/save-formula-item" {:post {:handler #'ct/save-formula-item}}]
-     ["/batches" {:get ct/batches}]
+     ["/batches" {:get {:handler #'ct/batches}}]
+     ["/add-batch" {:get {:handler #'ct/add-batch}}]
+     ["/save-new-batch" {:post {:handler #'ct/save-new-batch}}]
+     ["/del-batch/:id" {:get {:parameters {:path {:id int?}}}
+                           :handler #'ct/delete-batch}]
+     ["/batch-items/:id" {:get {:parameters {:path {:id int?}}}
+                           :handler #'ct/batch-items}]
+     ["/edit-batch-item/:id" {:get {:parameters {:path {:id int?}}}
+                                :handler #'ct/edit-batch-item}]
+     ["/save-batch-item" {:post {:handler #'ct/save-batch-item}}]
+     ["/sign-up" {:post {:handler #'ct/sign-up}}]
+     ["/verify-account" {:post {:handler #'ct/verify-account}}]
+     ["/login" {:post {:handler #'ct/login}}]
+     ["/reset-password" {:post {:handler #'ct/reset-password}}]
+     ["/logout" {:post {:handler #'ct/logout}}]
      ["/dump" {:get handle-dump
                :post handle-dump}]]
     {:data {:middleware [parameters/parameters-middleware
                          wrap-keyword-params]}})
+   ;; sign-up verify-account login reset-password logout
+
    (ring/routes
     ;; create-resource-handler serves static files from resources/public
     (ring/create-resource-handler {:path "/"})
@@ -102,6 +119,12 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (comment
+  
+  ;; NOTE: To start the application via the Calva REPL, for inatance, 
+  ;; evaluate the files in this order so dependencies are loaded using ctrl-alt-c then enter
+  ;; model.clj, view.clj, controller.clj, telogenix.clg
+  ;; then you can start or restart the server as needed by evaluating
+  ;; the functions below
 
   ;; Start application server - via `-main` or `app-server-start`
   (-main)
@@ -121,11 +144,14 @@
 
   ;; Check values set in the default system properties
   (def system-properties
-    (System/getProperties)))
+    (System/getProperties))
+  )
 
 (comment
 
   (def req {:user {:bar "none"}})
   (assoc-in req [:params :title] "Home")
   (pr-str req)
-  (clojure.java.io/resource "public/styles.css"))
+  (clojure.java.io/resource "public/styles.css")
+  
+  ,)
